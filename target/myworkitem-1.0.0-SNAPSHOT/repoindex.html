@@ -1,0 +1,64 @@
+<tr class="accordion-toggle" id="myworkitem-maintr">
+    <td><a href="#myworkitem-expdiv" data-toggle="collapse"><img src="myworkitem/icon.png" width="40" height="40">&nbsp;<b>myworkitem</b></a></td>
+    <td><button type="button" class="btn btn-primary"><span class="badge">1</span></button></td>
+    <td>Workitem Desciption</td>
+    <td>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton-myworkitem" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="fa fa-download">&nbsp;Select</span>
+      </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton-myworkitem">
+            <a class="dropdown-item" href="myworkitem/myworkitem.wid"><span class="fa fa-file">&nbsp;Workitem Definition MVEL</span></a>
+            <a class="dropdown-item" href="myworkitem/kie-deployment-descriptor.xml"><span class="fa fa-file">&nbsp;Kie Deployment Descriptor</span></a>
+            <a class="dropdown-item" href="myworkitem/myworkitem-1.0.0-SNAPSHOT.jar"><span class="fa fa-file">&nbsp;Workitem Jar</span></a>
+            <a class="dropdown-item" href="myworkitem/myworkitem.bpmn2"><span class="fa fa-file">&nbsp;Sample BPMN2 Process</span></a>
+        </div>
+    </div>
+    </td>
+    <td>
+    <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownInstallButton-myworkitem" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="fa fa-cogs">&nbsp;Select</span>
+          </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownInstallButton-myworkitem">
+                <a class="dropdown-item" data-toggle="modal" data-target="#installToWorkbenchModal" data-workitem-group="myworkitem" data-workitem-name="myworkitem"
+                data-workitem-handlers="MyWorkItemDefinitions"><span class="fa fa-file">&nbsp;KIE Workbench</span></a>
+            </div>
+        </div>
+    </td>
+</tr>
+<tr id="myworkitem-exptr">
+    <td colspan="12" class="hiddenRow"><div id="myworkitem-expdiv" class="accordian-body collapse">
+       <table class="table table-sm">
+       <tbody>
+       <tr><td>
+
+            <table class="table table-sm">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Handler</th>
+                  <th scope="col">Wid</th>
+                  <th scope="col">Auth Required</th>
+                  <th scope="col">Docs</th>
+                </tr>
+              </thead>
+              <tbody>
+                           <tr>
+                                 <th scope="row">1</th>
+                                 <td>MyWorkItemDefinitions</td>
+                                 <td>mvel: new com.redhat.MyWorkItemWorkItemHandler()</td>
+                                 <td><a href="myworkitem/MyWorkItemDefinitions.wid">MyWorkItemDefinitions.wid</a></td>
+                                 <td>true</td>
+                                 <td><a href="myworkitem/index.html#MyWorkItemDefinitions" class="btn btn-secondary btn-sm" role="button" aria-disabled="true"><span class="fa fa-eye">&nbsp;View</span></a></td>
+                               </tr>
+
+               </tbody>
+               </table>
+
+       </td></tr>
+        </tbody>
+       </table></div>
+    </td>
+</tr>

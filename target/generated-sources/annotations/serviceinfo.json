@@ -1,0 +1,55 @@
+{
+        "name" : "MyWorkItemDefinitions",
+        "displayName" : "MyWorkItemDefinitions",
+        "defaultHandler" : "mvel: new com.redhat.MyWorkItemWorkItemHandler()",
+        "documentation" : "myworkitem/index.html",
+        "module" : "myworkitem",
+        "icon" : "MyWorkItemDefinitions.png",
+            "category" : "myworkitem",
+            "description" : "Workitem Desciption",
+            "keywords" : [
+                                ""
+
+            ],
+                "isaction" : "true",
+                "actiontitle" : "Sample Title",
+            "requiresauth" : "true",
+                "authparams" : [
+                                           {
+                                               "name" : "SampleParam"
+                                           }
+                    ,{
+                                               "name" : "SampleParamTwo"
+                                           }
+
+                ],
+                "authreferencesite" : "referenceSiteURL",
+            "parameters" : [
+                                   {
+                                       "name" : "SampleParam",
+                                       "type" : "new StringDataType()"
+                                   }
+                ,{
+                                       "name" : "SampleParamTwo",
+                                       "type" : "new StringDataType()"
+                                   }
+
+            ],
+            "results" : [
+                                   {
+                                       "name" : "mr",
+                                       "type" : "new StringDataType()"
+                                   }
+
+            ],
+            "mavenDependencies" : [
+                                   {
+                                       "groupId" : "com.redhat",
+                                       "artifactId" : "myworkitem",
+                                       "version" : "1.0.0-SNAPSHOT"
+                                   }
+
+            ]
+}
+
+,
